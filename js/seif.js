@@ -48,7 +48,7 @@ function sleep(ms) {
 }
 
 
-async function dealCards() {
+async function dealCards2() {
     const deck = createDeck();
     const dealingSpeed = 500; // milliseconds between each card
 
@@ -94,6 +94,6 @@ window.onload = function() {
     const step2 = document.getElementById('step2');
     if (step2) {
         // Start dealing after a 2-second delay
-        setTimeout(() => dealCards(), 2000);
+        setTimeout(() => dealCards2(), 2000);
     }
 };
