@@ -1,86 +1,26 @@
-.aron-poker-container {
-    display: flex;
-    align-items: flex-start;
-    max-width: 1000px;
-    margin: 0 auto;
+body {
+    background-color: #2e7d32; /* Dark green background for the table */
+    color: white; /* Text color for better contrast */
+    font-family: Arial, sans-serif; /* Added font for better readability */
 }
 
-.aron-poker-table {
-    background-color: #1a6e37;
-    border-radius: 20px;
-    padding: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    margin-right: 20px;
-    height: 400px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-}
-
-.aron-description-text {
-    flex: 1;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.aron-card {
-    width: 60px;
-    height: 90px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 13px;
-    padding: 15px;
-    font-weight: bold;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-}
-
-.aron-card.red {
-    color: red;
-}
-
-.aron-card-value {
-    font-size: 20px;
-}
-
-.aron-card-suit {
-    font-size: 24px;
-}
-
-.aron-community-cards, .aron-player-hand {
+.action-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.aron-burn-pile {
-    width: 60px;
-    height: 90px;
-    background-color: #ddd;
-    border: 1px solid #999;
-    border-radius: 5px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    font-size: 14px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-}
-
-#aron-status-text {
     margin-top: 20px;
-    font-style: italic;
-    color: white;
-    text-align: center;
+}
+
+.action-button {
+    background-color: #ff5733; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    margin: 0 10px; /* Spacing between buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.action-button:hover {
+    background-color: #c0392b; /* Darker color on hover */
 }

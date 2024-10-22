@@ -3,111 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WELCOME TO POKER: Texas Hold'em</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/w3.css">
     <link rel="stylesheet" href="./css/seif.css">
+    <style>
+        canvas { border: 1px solid black; }
+        .action-container {
+            margin-top: 20px;
+        }
+        .action-button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="w3-container">
-    <div style="display: flex; align-items: center; justify-content: space-between"
-    class="w3-card w3-padding-16 w3-margin"
-    >
-    <h1 class="thick"> WELCOME TO POKER: Texas Hold'em</h1>
-        
-</div>
-
-<div class="w3-panel w3 leftbar w3-light-grey">
-    <p class="w3-xlarge w3-serif">
-        <i>About</i>
-    </p>
-    <p>Texas hold 'em (also known as Texas holdem, hold 'em, and holdem) is one of the most popular variants of the card game of poker. Two cards, known as hole cards, are dealt face down to each player, and then five community cards are dealt face up in three stages.All players in the game use these shared community cards in conjunction with their own hole cards to each make their best possible five-card poker hand.</p>
-    <p>Here are the winning poker hands, from highest to lowest:</p>
-    <img src="https://www.wikihow.com/images/thumb/6/65/Play-Poker-Step-1-Version-6.jpg/v4-373px-Play-Poker-Step-1-Version-6.jpg.webp" alt="poker winning hands">
-</div>
-
-<div class="w3-pqnel w3-red">
-    <p>Step 1</p>
-    <p>Pre-Flop</p>
-</div>
-<div>
-    <p>This is the initial betting round, which occurs after players have been dealt their two hole cards (face down). Players decide whether to fold, call, or raise based on the strength of their cards.</p>
-</div>
-<div>
-        <canvas id="pokerCanvas" width="800" height="600"></canvas>
-</div>
-<div id="step 1"></div>
-
-<div class="w3-pqnel w3-red">
-    <p>Step 2</p>
-    <p>Flop</p>
-</div>
-<p>The first three community cards are dealt face-up in the center of the table. This is followed by another round of betting. Players now have five cards to consider (their two hole cards plus the three community cards).</p>
-            
-        
-<div id="step2" class="game-stage">
-    <div id="poker-table-container">
-        <div class="poker-table">
-            
-            <div class="dealer-position">
-                <div class="dealer-label">D</div>
-            </div>
-            
-            
-            <div class="community-cards-area">
-                <div class="community-cards"></div>
-            </div>
-            
-            <div class="player player1">
-                <div class="player-cards"></div>
-                <div class="player-label">Player 1</div>
-            </div>
-            <div class="player player2">
-                <div class="player-cards"></div>
-                <div class="player-label">Player 2</div>
-            </div>
-            <div class="player player3">
-                <div class="player-cards"></div>
-                <div class="player-label">Player 3</div>
-            </div>
-            <div class="player player4">
-                <div class="player-cards"></div>
-                <div class="player-label">Player 4</div>
-            </div>
-        </div>
+    <div style="display: flex; align-items: center; justify-content: space-between" class="w3-card w3-padding-16 w3-margin">
+        <h1 class="thick">WELCOME TO POKER: Texas Hold'em</h1>
     </div>
-</div>
-<div id="step 2"></div>
 
-<div class="w3-pqnel w3-red">
-    <p>Step 3</p>
-    <p>Turn</p>
-</div>
-<div id="step 3"></div>
+    <div class="w3-panel w3-light-grey">
+        <p class="w3-xlarge w3-serif"><i>About</i></p>
+        <p>Texas hold 'em is one of the most popular variants of poker. Players are dealt two private cards, and five community cards are dealt face-up on the table. Players use these to make the best possible five-card hand.</p>
+        <p>Here are the winning poker hands, from highest to lowest:</p>
+        <img src="https://www.wikihow.com/images/thumb/6/65/Play-Poker-Step-1-Version-6.jpg/v4-373px-Play-Poker-Step-1-Version-6.jpg.webp" alt="poker winning hands">
+    </div>
 
-<div id="nextStepAron" class="w3-panel w3-red">
-    <p>Step 4</p>
-    <p>River</p>
-</div>
-<div> 
-    <p>Examine the "river" card and decide on the hand you'll play. After the dealer "burns" the top card on the deck, they'll put 1 last card face up next to the “turn” card. This final card is called the “river.” Check your hand and the community cards to decide on your best 5-card hand. Then, bet, call, or fold.</p>
-    <p>If the rules allow it, you may be able to exchange your hand 1 final time before or after betting. However, this isn’t common in professional games.</p>
-</div>
-<div id="step4Aron" class="w3-panel w3-white"></div>
-<div class="w3-pqnel w3-red">
-    <p>Step 5</p>
-    <p>Showdown</p>
-</div>
-<div><p>Each remaining player will participate in the “showdown</p></div>
-<div></div>
-<div><canvas id="pokerCanvas5Meso" width="800" height="800"></canvas>
+    <div class="w3-panel w3-red">
+        <p>Step 1</p>
+        <p>Pre-Flop</p>
+    </div>
+    <div>
+        <p>This is the initial betting round where players can call, raise, or fold based on their hole cards...</p>
+    </div>
+    <div>
+        <canvas id="pokerCanvas" width="800" height="600"></canvas>
+    </div>
 
-<div id="step 5"></div>
+    <div class="w3-panel w3-red">
+        <p>Step 2</p>
+        <p>Flop</p>
+    </div>
+    <p>The first three community cards are dealt face-up on the board. Players can now check or bet based on their hands...</p>
 
+    <div class="w3-panel w3-red">
+        <p>Step 3</p>
+        <p>Turn</p>
+    </div>
+    <p>The turn is the fourth community card dealt after the flop. The dealer burns a card, then reveals the turn card. A new betting round follows.</p>
+    <p>Check the turn card after the second round of betting. Consider possible hands other players might have...</p>
 
+    <div>
+        <canvas id="pokerCanvasTurn" width="800" height="600"></canvas>
+    </div>
 
+    <div class="w3-panel w3-red">
+        <p>Step 4</p>
+        <p>River</p>
+    </div>
+    <p>Examine the "river" card and decide on the hand you'll play. The final round of betting takes place...</p>
+
+    <div class="w3-panel w3-red">
+        <p>Step 5</p>
+        <p>Showdown</p>
+    </div>
+    <p>Each remaining player will participate in the “showdown” where the best hand wins...</p>
+
+    <script src="./js/alvin.js"></script>
 </body>
-<script src="./js/paula.js"></script>
-<script src="./js/august.js"></script>
-<script src="./js/aron.js"></script>
-<script src="./js/seif.js"></script>
 </html>
