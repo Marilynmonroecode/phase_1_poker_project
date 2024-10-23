@@ -147,7 +147,7 @@ function continuousRiverAnimation() {
             updateStatus('Card burned. Dealing river card...');
 
             setTimeout(() => {
-                const riverCard = dealCards(deck, 1)[0];
+                const riverCard = dealCards(deck4, 1)[0];
                 communityCardsElement.appendChild(createCardElement(riverCard));
                 updateStatus('River card dealt. Examine your hand and decide on your play.');
 

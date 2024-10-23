@@ -9,7 +9,7 @@ const TABLE_CENTER5_Y = 350;
 const TABLE_RADIUS5_X = 350;
 const TABLE_RADIUS5_Y = 350;
 
-function drawCard(x, y, card, faceUp = true, revealProgress = 1) {
+function drawCard5(x, y, card, faceUp = true, revealProgress = 1) {
     ctx5.save();
     ctx5.translate(x + CARD_WIDTH5 / 2, y + CARD_HEIGHT5 / 2);
     ctx5.rotate((1 - revealProgress) * Math.PI);
@@ -46,7 +46,7 @@ function drawTable() {
 
 function drawCommunityCards(cards) {
     cards.forEach((card, index) => {
-        drawCard(TABLE_CENTER5_X - 150 + index * 60, TABLE_CENTER5_Y - 35, card);
+        drawCard5(TABLE_CENTER5_X - 150 + index * 60, TABLE_CENTER5_Y - 35, card);
     });
 }
 
@@ -54,8 +54,8 @@ function drawPlayer(playerIndex, cards, angle, revealProgress) {
     const x = TABLE_CENTER5_X + Math.cos(angle) * TABLE_RADIUS5_X * 0.7;
     const y = TABLE_CENTER5_Y + Math.sin(angle) * TABLE_RADIUS5_Y * 0.7;
 
-    drawCard(x - 30, y, cards[0], true, revealProgress);
-    drawCard(x + 30, y, cards[1], true, revealProgress);
+    drawCard5(x - 30, y, cards[0], true, revealProgress);
+    drawCard5(x + 30, y, cards[1], true, revealProgress);
 
     ctx5.fillStyle = 'white';
     ctx5.font = '20px Arial';
